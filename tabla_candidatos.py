@@ -208,5 +208,5 @@ print(data_completo)
 
 #Pasar a .csv
 filepath = Path("Tablas Editadas/Candidaturas_2013_2017_2021.csv")
-data.to_csv(filepath, index = False, sep=";")
+data_completo.to_csv(filepath, index = False, sep=";")
 
