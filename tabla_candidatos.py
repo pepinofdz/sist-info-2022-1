@@ -199,10 +199,13 @@ data2["ID Partido"] = data2["ID Partido"].fillna("OTROS")
 #print(data2.head(10))
 #print(data2.columns)
 
+
 print(data.columns)
 print(data2.columns)
 
 data_completo = pd.concat([data2, data])
+
+data_completo["ID Region"] = data_completo["ID Region"].astype(int)
 
 print(data_completo)
 
