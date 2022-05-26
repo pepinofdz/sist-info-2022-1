@@ -83,6 +83,12 @@ data.insert(0, 'ID_apu', range(0, len(data)))
 
 data
 
+data = data.astype({"Año": int}, errors='raise')
+data = data.astype({"Monto": int}, errors='raise')
+data.dtypes
+
+data
+
 from google.colab import files
 
 data.to_csv('Aportes_publicos_anual.csv', encoding = 'utf-8-sig', index = False, sep=";") 
